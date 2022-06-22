@@ -1,0 +1,26 @@
+.col-form-label{
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    padding-bottom: 5px;
+}
+
+#btn_enviar{
+    font-weight: bold;
+    box-shadow: 1px 1px 1px 1px #ffffff;
+}
+
+@media screen and (max-width: 910px) {
+    .text-end{
+        text-align: left !important;
+    }
+    #btn_enviar{
+        width: 100%;
+    }
+    
+}
+.cliente-info{
+    margin-left: 10%;
+    margin-right: 10%;
+    border-color: ivory;
+}

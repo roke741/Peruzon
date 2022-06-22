@@ -1,0 +1,65 @@
+:root{
+    --gradient:  linear-gradient(to right, #ff0000, #ff3838, #fc6a6a, #fdb1b5, #ffffff,#fdb1b5, #fc6a6a, #ff3838, #ff0000);
+}
+.btn-agregar{
+    background-color: #270500cb;
+    border-radius: 10px;
+    color: #ffff;
+}
+.btn-agregar a{
+    color: #ffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+.title{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 46px;
+    text-transform: uppercase;
+    background-image: var(--gradient);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 400%;
+    animation: fondo-anim 5s infinite alternate;
+    /*texto con borde en 3d*/
+    -webkit-text-stroke: 1px #fff;
+}
+@keyframes fondo-anim{
+    0%{background-position: left;} /*por defecto*/
+    100%{background-position: right;}
+}
+@media screen and (max-width: 910px) {
+    .title{
+        font-size: 36px;
+    }
+
+}
+
+
+/* .table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.table-responsive {
+    min-height: .01%;
+    overflow-x: auto;
+}
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+@media screen and (max-width: 767px){
+    .table-responsive {
+        width: 100%;
+        margin-bottom: 15px;
+        overflow-y: hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        border: 1px solid #ddd;
+    }
+} */

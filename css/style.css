@@ -1,0 +1,45 @@
+:root{
+    --gradient:  linear-gradient(to right, #ff0000, #ff3838, #fc6a6a, #fdb1b5, #ffffff,#fdb1b5, #fc6a6a, #ff3838, #ff0000);
+}
+body{
+    background-color: #b42626;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.title{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 7em;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    color: #ee6352;
+    background-image: var(--gradient);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 400%;
+    animation: fondo-anim 5s infinite alternate;
+    /*texto con borde en 3d*/
+    border-bottom: 1px solid #fff;
+    -webkit-text-stroke: 1px #fff;
+}
+
+@keyframes fondo-anim{
+    0%{background-position: left;} /*por defecto*/
+    100%{background-position: right;}
+}
+
+@media screen and (max-width: 720px){
+    .title{
+        font-size: 4em;
+    }
+    .col-4{
+        width: 100%;
+    }
+    .col-3{
+        width: 80%;
+    }
+    .col-2{
+        width: 70%;
+    }
+}
+
